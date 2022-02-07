@@ -1,6 +1,5 @@
 package com.footforward.microservicenote.services;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.footforward.microservicenote.domain.Note;
 import com.footforward.microservicenote.repositories.INoteRepository;
 import org.apache.logging.log4j.LogManager;
@@ -27,6 +26,7 @@ public class NoteService implements INoteService {
      */
     @Override
     public List<Note> getNotes(Integer patId) {
+        logger.info("Getting notes for patient id " + patId);
         Note note = new Note();
         note.setPatId(patId);
         Example<Note> example = Example.of(note);
@@ -41,7 +41,7 @@ public class NoteService implements INoteService {
      */
     @Override
     public Note getNote(Integer id) {
-        logger.info("Getting note for patient id " + id);
+        logger.info("Getting note for note id " + id);
         Optional<Note> note = noteRepository.findById(id.toString());
         return note.get();
     }
@@ -67,7 +67,6 @@ public class NoteService implements INoteService {
     @Override
     public Note createNote(Note note) {
         List<Note> notes = getNotes(note.getPatId());
-        logger.info("notes are "+ asJsonString(notes));
         if (notes.size() > 0) {
             Integer id = notes.get(notes.size() - 1).getId() + 1;
             note.setId(id);
@@ -78,14 +77,11 @@ public class NoteService implements INoteService {
         logger.info("Creating note for patient with id " + note.getPatId());
         return noteUpdated;
     }
-    public static String asJsonString(final Object obj) {
-        try {
-            return new ObjectMapper().writeValueAsString(obj);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
     
+    /**
+     * delete all notes for test purposes
+     *
+     */
     @Override
     public void deleteNote() {
     noteRepository.deleteAll();

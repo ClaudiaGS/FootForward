@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/FootForwardGit.iml" filepath="$PROJECT_DIR$/.idea/FootForwardGit.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-note/microservice-note.iml" filepath="$PROJECT_DIR$/microservice-note/microservice-note.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-personaldata/microservice-personaldata.iml" filepath="$PROJECT_DIR$/microservice-personaldata/microservice-personaldata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-risk/microservice-risk.iml" filepath="$PROJECT_DIR$/microservice-risk/microservice-risk.iml" />
     </modules>
   </component>
 </project>
