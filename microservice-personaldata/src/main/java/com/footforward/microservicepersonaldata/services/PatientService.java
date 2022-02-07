@@ -1,14 +1,15 @@
-package com.microservicepersonaldata.services;
+package com.footforward.microservicepersonaldata.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.microservicepersonaldata.domain.Patient;
-import com.microservicepersonaldata.repositories.IPatientRepository;
+import com.footforward.microservicepersonaldata.domain.Patient;
+import com.footforward.microservicepersonaldata.repositories.IPatientRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PatientService implements IPatientService {
@@ -26,7 +27,7 @@ public class PatientService implements IPatientService {
     @Override
     public List<Patient> getPatients() {
         List<Patient> patients = patientRepository.findAll();
-        logger.info("Patient list is " + asJsonString(patients));
+        logger.info("Patient list is: " + patients);
         return patients;
     }
     
@@ -37,9 +38,10 @@ public class PatientService implements IPatientService {
      */
     @Override
     public Patient getPatient(Integer id) {
-        Patient patient = patientRepository.getById(id);
+        Optional<Patient> patient = patientRepository.findById(id);
+        Patient patientToReturn = patient.get();
         logger.info("Getting patient info for id=" + id);
-        return patient;
+        return patientToReturn;
     }
     
     /**
@@ -50,6 +52,10 @@ public class PatientService implements IPatientService {
     @Override
     public Patient updatePatient(Patient patient) {
         logger.info("Updating patient with id=" + patient.getId());
+        if(alreadyExist(patient)){
+            logger.info("Person with data you just modified already exists");
+            return null;
+        }
         return patientRepository.save(patient);
     }
     
@@ -60,22 +66,15 @@ public class PatientService implements IPatientService {
      * @see IPatientService#createPatient(Patient)
      */
     @Override
-    @ValidPatient
+    //@ValidPatient
     public Patient createPatient(Patient patient) {
-        logger.info("Creating patient " + asJsonString(patient));
-        Patient createdPatient=new Patient();
-        List<Patient> patients = getPatients();
-        for (Patient p : patients) {
-            if (p.getLastName().equals(p.getLastName())&& p.getDateOfBirth().equals(patient.getDateOfBirth()) && p.getAddress().equals(patient.getAddress())) {
-                logger.info("Patient already exists");
-                createdPatient= null;
-                break;
-            } else createdPatient=patientRepository.save(patient);
+        logger.info("Creating patient {}",patient);
+        if (alreadyExist(patient)) {
+            logger.info("Patient already exists");
+            return null;
         }
-        
-      return createdPatient;
-//        return alreadyExist(patient);
-    }
+      return patientRepository.save(patient);
+}
     
     /**
      * @param obj
@@ -89,15 +88,20 @@ public class PatientService implements IPatientService {
         }
     }
     
-//    @ValidPatient
-//    public Patient alreadyExist(Patient patient) {
-//        List<Patient> patients = getPatients();
-//        for (Patient p : patients) {
-//            if(!(p.getLastName().equals(p.getLastName()))&&!(p.getDateOfBirth().equals(patient.getDateOfBirth()))&&!(p.getAddress().equals(patient.getAddress()))) {
-//                return patientRepository.save(patient);
-//            }
-//        }return null;
-//    }
+    /**
+     * check if patient already exists in DB
+     * @param patient
+     * @return boolean
+     */
+    public boolean alreadyExist(Patient patient) {
+        List<Patient> patients = getPatients();
+        for (Patient p : patients) {
+            if (p.getFirstName().equals(patient.getFirstName())&&p.getLastName().equals(patient.getLastName()) && p.getDateOfBirth().toString().equals(patient.getDateOfBirth().toString()) && p.getAddress().equals(patient.getAddress())&&p.getPhone().equals(patient.getPhone())&&p.getSex().equals(patient.getSex())) {
+                return true;
+            }
+        }
+        return false;
+    }
     
     
 }

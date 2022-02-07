@@ -1,4 +1,4 @@
-package com.microservicepersonaldata;
+package com.footforward.microservicepersonaldata;
 
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.boot.SpringApplication;

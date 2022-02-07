@@ -1,6 +1,6 @@
-package com.microservicepersonaldata.services;
+package com.footforward.microservicepersonaldata.services;
 
-import com.microservicepersonaldata.domain.Patient;
+import com.footforward.microservicepersonaldata.domain.Patient;
 
 import java.util.List;
 
@@ -21,14 +21,14 @@ public interface IPatientService {
     /**
      *
      * @param patient
-     * @return void
+     * @return Patient
      */
     public Patient updatePatient(Patient patient);
     
     /**
      *
      * @param patient
-     * @return void
+     * @return Patient
      */
     public Patient createPatient(Patient patient);
     

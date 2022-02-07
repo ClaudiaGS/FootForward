@@ -1,4 +1,4 @@
-
+package com.footforward.microservicepersonaldata.domain;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -10,7 +10,6 @@ import java.sql.Date;
 public class Patient {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-   // @Column(name="PatientId")
     private Integer id;
     @NotBlank(message = "FirstName is mandatory")
     private String firstName;
@@ -18,13 +17,8 @@ public class Patient {
     private String lastName;
     @NotBlank(message = "Please insert sex")
     private String sex;
-    
-    //@CreatedDate
-//@DateTimeFormat(pattern = "yyyy-MM-dd")
-   // @Type(parameters = "yyyy-mm-dd")
     @NotNull(message = "Date of birth is mandatory")
-    private java.sql.Date dateOfBirth;
-    
+    private Date dateOfBirth;
     @NotBlank(message = "Address is mandatory")
     private String address;
     @NotBlank(message = "Phone is mandatory")
@@ -58,7 +52,7 @@ public class Patient {
         return dateOfBirth;
     }
     
-    public void setDateOfBirth(java.sql.Date dateOfBirth) {
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
     
@@ -84,5 +78,18 @@ public class Patient {
     
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+    
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", sex='" + sex + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }

@@ -1,4 +1,4 @@
-package com.microservicepersonaldata.integration.config;
+package com.footforward.microservicepersonaldata.integration.config;
 
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
