@@ -2,8 +2,11 @@ package com.footforward.microservicemodule.beans;
 
 public class NoteBean {
     private Integer id;
+
     private Integer patId;
+
     private String patient;
+
     private String note;
     
     public NoteBean() {

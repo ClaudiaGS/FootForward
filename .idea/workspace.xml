@@ -5,17 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed8c16d5-97af-4b45-b967-9e5de2422807" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mavenProjectSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/beans/NoteBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/beans/NoteBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/INoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/INoteProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/controllers/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/controllers/NoteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/services/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/services/NoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-risk/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/beans/NoteBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/beans/NoteBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/INoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/INoteProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/services/RiskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/services/RiskService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,48 +49,105 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice-risk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice-risk/target" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.20709223" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.testRunning" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-risk\target" />
       <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-note\target" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MicroservicePersonaldataApplication">
-    <configuration name="MicroserviceNoteApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicenote.MicroserviceNoteApplication" />
-      <module name="microservice-note" />
+  <component name="RunManager" selected="JUnit.RiskServiceIT">
+    <configuration name="RiskServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-risk" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.footforward.microservicenote.*" />
+          <option name="PATTERN" value="com.footforward.microservicerisk.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicerisk.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicerisk.integration.RiskServiceIT" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MicroservicePersonaldataApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicepersonaldata.MicroservicePersonaldataApplication" />
-      <module name="microservice-personaldata" />
+    <configuration name="RiskServiceIT.countTriggersIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-risk" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.footforward.microservicepersonaldata.*" />
+          <option name="PATTERN" value="com.footforward.microservicerisk.integration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicerisk.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicerisk.integration.RiskServiceIT" />
+      <option name="METHOD_NAME" value="countTriggersIT" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RiskServiceIT.diabetesAssessementCase6Greater30M" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-risk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footforward.microservicerisk.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicerisk.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicerisk.integration.RiskServiceIT" />
+      <option name="METHOD_NAME" value="diabetesAssessementCase6Greater30M" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RiskServiceIT.diabetesAssessementCase7Greater30F" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-risk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footforward.microservicerisk.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicerisk.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicerisk.integration.RiskServiceIT" />
+      <option name="METHOD_NAME" value="diabetesAssessementCase7Greater30F" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RiskServiceIT.diabetesAssessementCase8Greater30F" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-risk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footforward.microservicerisk.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicerisk.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicerisk.integration.RiskServiceIT" />
+      <option name="METHOD_NAME" value="diabetesAssessementCase8Greater30F" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MicroservicePersonaldataApplication" />
-        <item itemvalue="Application.MicroserviceNoteApplication" />
+        <item itemvalue="JUnit.RiskServiceIT" />
+        <item itemvalue="JUnit.RiskServiceIT.countTriggersIT" />
+        <item itemvalue="JUnit.RiskServiceIT.diabetesAssessementCase8Greater30F" />
+        <item itemvalue="JUnit.RiskServiceIT.diabetesAssessementCase7Greater30F" />
+        <item itemvalue="JUnit.RiskServiceIT.diabetesAssessementCase6Greater30M" />
       </list>
     </recent_temporary>
   </component>

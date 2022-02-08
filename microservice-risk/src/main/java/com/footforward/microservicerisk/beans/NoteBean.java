@@ -1,19 +1,13 @@
 package com.footforward.microservicerisk.beans;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-
 public class NoteBean {
  
     private Integer id;
-    
-    @NotNull(message = "patId cannot be null")
+
     private Integer patId;
-    
-    @NotBlank(message = "Patient is mandatory")
+ 
     private String patient;
     
-    @NotBlank(message = "Note cannot be empty")
     private String note;
     
     

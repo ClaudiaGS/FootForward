@@ -25,7 +25,6 @@ public class RiskService implements IRiskService {
         logger.info("age is " + age);
         String sex = risk.getSex();
         String assessement = null;
-        
         int triggersCount = countTriggers(risk.getNotes()).size();
         switch (triggersCount) {
             case 0:
@@ -85,7 +84,7 @@ public class RiskService implements IRiskService {
                 if (age < 30) {
                     assessement = "Early onset";
                 } else {
-                    assessement = "In danger";
+                    assessement = "In Danger";
                 }
                 break;
             case 8:

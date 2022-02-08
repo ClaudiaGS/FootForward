@@ -18,23 +18,23 @@ public class NoteController {
     IPatientProxy patientProxy;
     
     
-    @GetMapping("/notes")
+    @GetMapping("/patHistory/list")
     public List<Note> getNotes(@RequestParam Integer patId){
         return noteService.getNotes(patId);
     }
     
-    @GetMapping("/note")
+    @GetMapping("/patHistory")
     public Note getNote(@RequestParam Integer id) {
         return noteService.getNote(id);
     }
     
-    @PutMapping("/note/update")
+    @PutMapping("/patHistory/update")
     public Note updateNote(@RequestBody @Valid Note note) {
         return noteService.updateNote(note);
     }
     
     
-    @PostMapping("/note/add")
+    @PostMapping("/patHistory/add")
     public Note addNote(@RequestBody @Valid Note note){
         return noteService.createNote(note);
     }

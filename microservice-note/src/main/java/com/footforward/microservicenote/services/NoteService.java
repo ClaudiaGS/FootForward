@@ -66,13 +66,8 @@ public class NoteService implements INoteService {
      */
     @Override
     public Note createNote(Note note) {
-        List<Note> notes = getNotes(note.getPatId());
-        if (notes.size() > 0) {
-            Integer id = notes.get(notes.size() - 1).getId() + 1;
-            note.setId(id);
-        }else {
-            note.setId(1);
-        }
+        
+        note.setId(getAvailableNoteId());
         Note noteUpdated = noteRepository.save(note);
         logger.info("Creating note for patient with id " + note.getPatId());
         return noteUpdated;
@@ -80,10 +75,25 @@ public class NoteService implements INoteService {
     
     /**
      * delete all notes for test purposes
-     *
      */
     @Override
     public void deleteNote() {
-    noteRepository.deleteAll();
+        noteRepository.deleteAll();
+    }
+    
+    /**
+     * getting last note id
+     * return Integer
+     */
+    public Integer getAvailableNoteId() {
+        logger.info("Getting all notes in DB");
+        List<Note> notes = noteRepository.findAll();
+        Integer id = 0;
+        if (notes.size() > 0) {
+            id = notes.get(notes.size() - 1).getId() + 1;
+        } else {
+            id = 0;
+        }
+        return id;
     }
 }

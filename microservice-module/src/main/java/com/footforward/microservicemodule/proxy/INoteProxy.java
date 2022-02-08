@@ -18,25 +18,25 @@ public interface INoteProxy {
     /**
      * @see com.footforward.microservicenote.controllers
      */
-    @RequestMapping(method = RequestMethod.GET, value = "/notes")
+    @RequestMapping(method = RequestMethod.GET, value = "/patHistory/list")
     List<NoteBean> getNotes(@RequestParam("patId") Integer patId);
     
     /**
      * @see com.footforward.microservicenote.controllers
      */
-    @RequestMapping(method = RequestMethod.GET, value = "/note")
+    @RequestMapping(method = RequestMethod.GET, value = "/patHistory")
     NoteBean getNote(@RequestParam("id") Integer id);
     
     /**
      * @see com.footforward.microservicenote.controllers
      */
-    @RequestMapping(method = RequestMethod.PUT, value = "/note/update")
+    @RequestMapping(method = RequestMethod.PUT, value = "/patHistory/update")
     NoteBean updateNote(@RequestBody NoteBean note);
     
     /**
      * @see com.footforward.microservicenote.controllers
      */
-    @RequestMapping(method = RequestMethod.POST, value = "/note/add")
+    @RequestMapping(method = RequestMethod.POST, value = "/patHistory/add")
     NoteBean addNote(@RequestBody NoteBean note);
     
 }
