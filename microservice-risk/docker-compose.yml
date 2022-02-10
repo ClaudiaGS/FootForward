@@ -1,0 +1,36 @@
+version: '3.3'
+
+services:
+  mrisk:
+    image: mrisk:latest
+    container_name: mrisk
+    ports:
+      - 9003:9003
+    networks:
+      - footforward-network
+    depends_on:
+      - mpersonaldata
+      - mnote
+    restart: always
+
+  mpersonaldata:
+    image: mpersonaldata:latest
+    container_name: mpersonaldata
+    ports:
+      - 9001:9001
+    networks:
+      - footforward-network
+    restart: always
+
+  mnote:
+    image: mnote:latest
+    container_name: mnote
+    ports:
+      - 9002:9002
+    networks:
+      - footforward-network
+    restart: always
+
+networks:
+  footforward-network:
+    driver: bridge

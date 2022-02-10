@@ -127,7 +127,7 @@ public class ViewController {
         model.addAttribute("notes", noteProxy.getNotes(id));
         RiskBean risk=riskProxy.getDiabetesAssessement(id);
         model.addAttribute("risk",risk);
-        model.addAttribute("triggers",(risk.getTriggers().toString()));
+        model.addAttribute("triggers",(risk.getTriggers().toString().replaceAll("\\[","").replaceAll("\\]","")));
         return "risk";
     }
 }

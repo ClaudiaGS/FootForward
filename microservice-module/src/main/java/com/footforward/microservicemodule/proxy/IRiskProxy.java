@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name = "microservice-risk", url = "localhost:9003")
+@FeignClient(name = "microservice-risk", url = "mrisk:9003")
 public interface IRiskProxy {
     
     /**
