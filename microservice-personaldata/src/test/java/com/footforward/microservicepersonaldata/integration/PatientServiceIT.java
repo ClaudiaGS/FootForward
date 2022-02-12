@@ -9,6 +9,7 @@ import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
+import org.springframework.test.context.TestPropertySource;
 
 import javax.sql.DataSource;
 import java.io.BufferedReader;
@@ -24,6 +25,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @Import(TestConfig.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@TestPropertySource("/application-test.properties")
 @SpringBootTest
 public class PatientServiceIT {
 
@@ -40,7 +42,7 @@ public class PatientServiceIT {
         try {
             con = dataBaseTest.getConnection();
             sr = new ScriptRunner(con);
-            reader = new BufferedReader(new FileReader("F:\\OPENCLASSROOMS\\PROJET 9\\FootForward1\\microservice-personaldata\\src\\test\\com\\microservicepersonaldata\\integration\\config\\resources\\dataTest.sql"));
+            reader = new BufferedReader(new FileReader("F:\\OPENCLASSROOMS\\PROJET 9\\FootForwardGit\\microservice-personaldata\\src\\test\\java\\com\\footforward\\microservicepersonaldata\\integration\\config\\resources\\dataTest.sql"));
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -107,7 +109,7 @@ public class PatientServiceIT {
         assertThat(createdPatient.getFirstName()).isEqualTo("firstName3");
         assertThat(createdPatient.getId()).isEqualTo(3);
     }
-    
+
     public static String asJsonString(final Object obj) {
         try {
             return new ObjectMapper().writeValueAsString(obj);

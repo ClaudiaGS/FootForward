@@ -1,46 +1,47 @@
 version: '3.3'
 
 services:
-  microservicemodule:
-    image: microservicemodule:latest
-    container_name: microservicemodule
+  microservice-module:
+    image: microservice-module:latest
+    container_name: microservice-module
     ports:
       - 8080:8080
     networks:
-      - footforward-network
-    depends_on:
-      - mpersonaldata
-      - mnote
-      - mrisk
+      - microservice-personaldata_footforward-network
+    external_links:
+      - microservice-personaldata
+      - microservice-note
+      - microservice-risk
     restart: always
 
-  mpersonaldata:
-    image: mpersonaldata:latest
-    container_name: mpersonaldata
-    ports:
-      - 9001:9001
-    networks:
-      - footforward-network
-    restart: always
-
-  mnote:
-    image: mnote:latest
-    container_name: mnote
-    ports:
-      - 9002:9002
-    networks:
-      - footforward-network
-    restart: always
-
-  mrisk:
-    image: mrisk:latest
-    container_name: mrisk
-    ports:
-      - 9003:9003
-    networks:
-      - footforward-network
-    restart: always
+#  microservice-personaldata:
+#    image: microservice-personaldata:latest
+#    container_name: microservice-personaldata
+#    ports:
+#      - 9001:9001
+#    networks:
+#      - footforward-network
+#    restart: always
+#
+#  microservice-note:
+#    image: microservice-note:latest
+#    container_name: microservice-note
+#    ports:
+#      - 9002:9002
+#    networks:
+#      - footforward-network
+#    restart: always
+#
+#  microservice-risk:
+#    image: microservice-risk:latest
+#    container_name: microservice-risk
+#    ports:
+#      - 9003:9003
+#    networks:
+#      - footforward-network
+#    restart: always
 
 networks:
-  footforward-network:
+  microservice-personaldata_footforward-network:
     driver: bridge
+    external: true

@@ -15,7 +15,7 @@ import java.util.List;
  * Declare the microservice-patient endpoint
  */
 @Validated
-@FeignClient(name = "microservice-personaldata", url = "mpersonaldata:9001")
+@FeignClient(name = "microservice-personaldata", url = "microservice-personaldata:9001")
 public interface IPatientProxy {
     
     /**

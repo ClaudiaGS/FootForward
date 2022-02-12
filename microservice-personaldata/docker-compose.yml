@@ -1,0 +1,44 @@
+version: '3.3'
+#volumes:
+#  patientDB:
+services:
+  mysqlcontainer:
+    container_name: mysqlcontainer
+    image: mysql:latest
+
+    environment:
+      MYSQL_ROOT_PASSWORD: rootroot
+
+#      MYSQL_DATABASE: patientDB
+#      MYSQL_USER: root
+#      MYSQL_PASSWORD: rootroot
+    volumes:
+      - ./data/db:/var/lib/mysql
+#      - F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata\patientDB:/var/lib/mysql
+
+    ports:
+      - "3306:3306"
+    networks:
+      - footforward-network
+    restart: always
+
+
+  microservice-personaldata:
+    image: microservice-personaldata:latest
+    container_name: microservice-personaldata
+    ports:
+      - 9001:9001
+    networks:
+      - footforward-network
+    depends_on:
+      - mysqlcontainer
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysqlcontainer:3306/patientDB?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: rootroot
+    restart: always
+
+networks:
+  footforward-network:
+    driver: bridge
+

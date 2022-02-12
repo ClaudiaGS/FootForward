@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Declare the microservice-note endpoint
  */
-@FeignClient(name = "microservice-note", url = "mnote:9002")
+@FeignClient(name = "microservice-note", url = "microservice-note:9002")
 public interface INoteProxy {
     
     /**

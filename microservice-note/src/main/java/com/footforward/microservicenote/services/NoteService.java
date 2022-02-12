@@ -66,7 +66,6 @@ public class NoteService implements INoteService {
      */
     @Override
     public Note createNote(Note note) {
-        
         note.setId(getAvailableNoteId());
         Note noteUpdated = noteRepository.save(note);
         logger.info("Creating note for patient with id " + note.getPatId());

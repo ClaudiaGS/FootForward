@@ -6,11 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="ed8c16d5-97af-4b45-b967-9e5de2422807" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/controllers/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/controllers/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-module/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/INoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/INoteProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/IPatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/IPatientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/IRiskProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/IRiskProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/doc/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/doc/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/configuration/MongoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/configuration/MongoConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/proxy/IPatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/proxy/IPatientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/services/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/services/NoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/MicroservicePersonaldataApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/MicroservicePersonaldataApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/integration/PatientServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/integration/PatientServiceIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/integration/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/integration/config/TestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-risk/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/INoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/INoteProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/IPatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/IPatientProxy.java" afterDir="false" />
     </list>
@@ -37,6 +47,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="24mrc8Q5wZaxoUajNQk6Uv2iUvP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,20 +59,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice-risk" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice-personaldata/src/main/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.21444444" />
     <property name="project.structure.side.proportion" value="0.20709223" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.testRunning" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata\src\main\resources" />
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata" />
       <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-risk" />
       <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-note" />
       <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-module" />
-      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata" />
-      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-risk\target" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
   </component>
   <component name="RunManager" selected="Application.MicroservicePersonaldataApplication">
     <configuration name="MicroservicePersonaldataApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -71,6 +89,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-personaldata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footforward.microservicepersonaldata.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicepersonaldata.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicepersonaldata.integration.PatientServiceIT" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,22 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RiskServiceIT.diabetesAssessementCase7Greater30F" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="microservice-risk" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.footforward.microservicerisk.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.footforward.microservicerisk.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicerisk.integration.RiskServiceIT" />
-      <option name="METHOD_NAME" value="diabetesAssessementCase7Greater30F" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RiskServiceIT.diabetesAssessementCase8Greater30F" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="microservice-risk" />
       <extension name="coverage">
@@ -140,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PatientServiceIT" />
         <item itemvalue="Application.MicroservicePersonaldataApplication" />
         <item itemvalue="JUnit.RiskServiceIT" />
         <item itemvalue="JUnit.RiskServiceIT.countTriggersIT" />
         <item itemvalue="JUnit.RiskServiceIT.diabetesAssessementCase8Greater30F" />
-        <item itemvalue="JUnit.RiskServiceIT.diabetesAssessementCase7Greater30F" />
       </list>
     </recent_temporary>
   </component>

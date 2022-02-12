@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 @TestConfiguration
 @EnableEncryptableProperties
 public class TestConfig {
-    
+
     @Bean
     @Primary
     public DataSource getDataSource(Environment env)
