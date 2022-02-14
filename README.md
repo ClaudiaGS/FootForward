@@ -1,4 +1,4 @@
-##FootForward
+## FootForward
 
 ## P9 Openclassrooms Application
 
@@ -17,8 +17,8 @@
 > > - Docker Desktop
 
 **Architecture**
-![Architecture.jpg](microservice-module/src/main/resources/static/Architecture.jpg)
+![Architecture.jpg](microservice-module/src/main/resources/static/Architecture.JPG)
 
 **Test Report**
-![TestReport.jpg](microservice-module/src/main/resources/static/TestReports.jpg)
+![TestReport.jpg](microservice-module/src/main/resources/static/TestReports.JPG)
 
