@@ -1,0 +1,43 @@
+version: '3.3'
+
+services:
+  microservice-risk:
+    image: microservice-risk:latest
+    container_name: microservice-risk
+    ports:
+      - 9003:9003
+    networks:
+      - microservice-personaldata_footforward-network
+    external_links:
+      - microservice-personaldata
+      - microservice-note
+
+#    depends_on:
+#      - microservice-personaldata
+#      - microservice-note
+#    command: ["./wait-for-it.sh", "microservice-personaldata:9001","microservice-note"]
+
+    restart: always
+
+#  microservice-personaldata:
+#    image: microservice-personaldata:latest
+#    container_name: microservice-personaldata
+#    ports:
+#      - 9001:9001
+#    networks:
+#      - footforward-network
+#    restart: always
+#
+#  microservice-note:
+#    image: microservice-note:latest
+#    container_name: microservice-note
+#    ports:
+#      - 9002:9002
+#    networks:
+#      - footforward-network
+#    restart: always
+
+networks:
+  microservice-personaldata_footforward-network:
+    driver: bridge
+    external: true
