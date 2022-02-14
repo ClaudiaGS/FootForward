@@ -1,5 +1,6 @@
 package com.footforward.microservicenote.controllers;
 
+import com.footforward.microservicenote.beans.PatientBean;
 import com.footforward.microservicenote.domain.Note;
 import com.footforward.microservicenote.proxy.IPatientProxy;
 import com.footforward.microservicenote.services.INoteService;
@@ -19,7 +20,7 @@ public class NoteController {
     
     
     @GetMapping("/patHistory/list")
-    public List<Note> getNotes(@RequestParam Integer patId){
+    public List<Note> getNotes(@RequestParam Integer patId) {
         return noteService.getNotes(patId);
     }
     
@@ -30,12 +31,23 @@ public class NoteController {
     
     @PutMapping("/patHistory/update")
     public Note updateNote(@RequestBody @Valid Note note) {
+        Note noteExisting = noteService.getNote(note.getId());
+        PatientBean patientBean = patientProxy.getPatient(noteExisting.getPatId());
+        note.setPatId(noteExisting.getPatId());
+        note.setPatient(patientBean.getFirstName() + " " + patientBean.getLastName());
         return noteService.updateNote(note);
     }
     
-    
     @PostMapping("/patHistory/add")
-    public Note addNote(@RequestBody @Valid Note note){
-        return noteService.createNote(note);
+    public Note addNote(@RequestBody @Valid Note note) {
+        PatientBean patientBean = patientProxy.getPatient(note.getPatId());
+        Note noteToReturn = new Note();
+        if (patientBean!=null) {
+            note.setPatient(patientBean.getFirstName() + " " + patientBean.getLastName());
+            noteToReturn = noteService.createNote(note);
+        } else {
+            noteToReturn = null;
+        }
+        return noteToReturn;
     }
 }

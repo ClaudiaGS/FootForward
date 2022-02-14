@@ -6,8 +6,6 @@ import com.footforward.microservicemodule.beans.RiskBean;
 import com.footforward.microservicemodule.proxy.INoteProxy;
 import com.footforward.microservicemodule.proxy.IPatientProxy;
 import com.footforward.microservicemodule.proxy.IRiskProxy;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,7 +18,7 @@ import javax.validation.Valid;
 
 @Controller
 public class ViewController {
-    private static final Logger logger = LogManager.getLogger("View");
+   
     @Autowired
     IPatientProxy patientProxy;
     @Autowired
@@ -81,7 +79,6 @@ public class ViewController {
     @GetMapping("/note/update/{id}")
     public String showUpdateNoteForm(@PathVariable Integer id, Model model) {
         NoteBean note = noteProxy.getNote(id);
-        logger.info("note" ,note);
         model.addAttribute("patient", patientProxy.getPatient(note.getPatId()));
         model.addAttribute("note", note);
         return "updateNote";
@@ -91,11 +88,9 @@ public class ViewController {
     public String updateNoteText(@PathVariable Integer id, @Valid NoteBean note, Model model) {
         note.setId(id);
         note.setPatId(noteProxy.getNote(id).getPatId());
-  logger.info("here note pat id"+note.getPatId());
         PatientBean patient=patientProxy.getPatient(note.getPatId());
         note.setPatient(patient.getFirstName()+" "+patient.getLastName());
         noteProxy.updateNote(note);
-        logger.info("here patient id"+note.getPatId());
         model.addAttribute("patient",patient);
         return "redirect:/patient/"+note.getPatId();
         
@@ -105,7 +100,6 @@ public class ViewController {
     public String addNote(NoteBean note, @PathVariable Integer id, Model model) {
         model.addAttribute("note", note);
         model.addAttribute("patient", patientProxy.getPatient(id));
-        logger.info("here " + patientProxy.getPatient(id).getId());
         return "addNote";
     }
     

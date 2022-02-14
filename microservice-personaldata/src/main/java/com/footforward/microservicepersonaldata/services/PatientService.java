@@ -1,6 +1,5 @@
 package com.footforward.microservicepersonaldata.services;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.footforward.microservicepersonaldata.domain.Patient;
 import com.footforward.microservicepersonaldata.repositories.IPatientRepository;
 import org.apache.logging.log4j.LogManager;
@@ -38,9 +37,16 @@ public class PatientService implements IPatientService {
      */
     @Override
     public Patient getPatient(Integer id) {
-        Optional<Patient> patient = patientRepository.findById(id);
-        Patient patientToReturn = patient.get();
-        logger.info("Getting patient info for id=" + id);
+        Patient patientToReturn = new Patient();
+        int maxId = getPatients().size();
+        if (id <= maxId) {
+            Optional<Patient> patient = patientRepository.findById(id);
+            patientToReturn = patient.get();
+            logger.info("Getting patient info for id=" + id);
+        } else {
+            patientToReturn = null;
+            logger.error("Patient with id " + id + " doesn't exist. Max id is " + maxId);
+        }
         return patientToReturn;
     }
     
@@ -52,7 +58,7 @@ public class PatientService implements IPatientService {
     @Override
     public Patient updatePatient(Patient patient) {
         logger.info("Updating patient with id=" + patient.getId());
-        if(alreadyExist(patient)){
+        if (alreadyExist(patient)) {
             logger.info("Person with data you just modified already exists");
             return null;
         }
@@ -68,35 +74,24 @@ public class PatientService implements IPatientService {
     @Override
     //@ValidPatient
     public Patient createPatient(Patient patient) {
-        logger.info("Creating patient {}",patient);
+        logger.info("Creating patient {}", patient);
         if (alreadyExist(patient)) {
             logger.info("Patient already exists");
             return null;
         }
-      return patientRepository.save(patient);
-}
-    
-    /**
-     * @param obj
-     * @return String
-     */
-    public static String asJsonString(final Object obj) {
-        try {
-            return new ObjectMapper().writeValueAsString(obj);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        return patientRepository.save(patient);
     }
     
     /**
      * check if patient already exists in DB
+     *
      * @param patient
      * @return boolean
      */
     public boolean alreadyExist(Patient patient) {
         List<Patient> patients = getPatients();
         for (Patient p : patients) {
-            if (p.getFirstName().equals(patient.getFirstName())&&p.getLastName().equals(patient.getLastName()) && p.getDateOfBirth().toString().equals(patient.getDateOfBirth().toString()) && p.getAddress().equals(patient.getAddress())&&p.getPhone().equals(patient.getPhone())&&p.getSex().equals(patient.getSex())) {
+            if (p.getFirstName().equals(patient.getFirstName()) && p.getLastName().equals(patient.getLastName()) && p.getDateOfBirth().toString().equals(patient.getDateOfBirth().toString()) && p.getAddress().equals(patient.getAddress()) && p.getPhone().equals(patient.getPhone()) && p.getSex().equals(patient.getSex())) {
                 return true;
             }
         }

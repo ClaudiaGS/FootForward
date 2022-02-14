@@ -41,9 +41,18 @@ public class NoteService implements INoteService {
      */
     @Override
     public Note getNote(Integer id) {
-        logger.info("Getting note for note id " + id);
-        Optional<Note> note = noteRepository.findById(id.toString());
-        return note.get();
+        int maxNoteId=getAvailableNoteId()-1;
+        Note noteToReturn=new Note();
+        if(id<=maxNoteId) {
+            logger.info("Getting note for note id " + id);
+            Optional<Note> note = noteRepository.findById(id.toString());
+            noteToReturn=note.get();
+        }
+        else{
+            logger.error("Id "+id+" doesn't exist. Max id is "+maxNoteId);
+            noteToReturn=null;
+        }
+        return noteToReturn;
     }
     
     
@@ -81,7 +90,7 @@ public class NoteService implements INoteService {
     }
     
     /**
-     * getting last note id
+     * get last note id
      * return Integer
      */
     public Integer getAvailableNoteId() {
@@ -91,7 +100,7 @@ public class NoteService implements INoteService {
         if (notes.size() > 0) {
             id = notes.get(notes.size() - 1).getId() + 1;
         } else {
-            id = 0;
+            id = 1;
         }
         return id;
     }

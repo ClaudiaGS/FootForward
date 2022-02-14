@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+/**
+ * Declare the microservice-risk endpoint
+ */
 @FeignClient(name = "microservice-risk", url = "microservice-risk:9003")
 public interface IRiskProxy {
     

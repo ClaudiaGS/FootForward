@@ -17,8 +17,7 @@ import static org.mockito.Mockito.when;
 public class RiskServiceIT {
     @Autowired
     RiskService riskService;
-
-   
+ 
     
     @Test
     public void countTriggersIT() {

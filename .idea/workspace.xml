@@ -6,23 +6,54 @@
   <component name="ChangeListManager">
     <list default="true" id="ed8c16d5-97af-4b45-b967-9e5de2422807" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-module/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/INoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/INoteProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/controllers/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/controllers/ViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/IPatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/IPatientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/IRiskProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/java/com/footforward/microservicemodule/proxy/IRiskProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/doc/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/doc/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/configuration/MongoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/configuration/MongoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-module/src/main/resources/templates/addNote.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-module/src/main/resources/templates/addNote.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-2--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-2--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-4--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-4--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-7--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-7--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/diagnostic.data/metrics.2022-02-12T18-39-30Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/diagnostic.data/metrics.2022-02-12T18-39-30Z-00000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/diagnostic.data/metrics.interim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/index-3--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/index-3--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/index-5--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/index-5--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/index-6--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/index-6--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/index-8--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/index-8--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/journal/WiredTigerLog.0000000005" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/sizeStorer.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/controllers/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/controllers/NoteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/proxy/IPatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/proxy/IPatientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/services/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/java/com/footforward/microservicenote/services/NoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/binlog.000010" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/binlog.000010" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/patientDB/patient.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/patientDB/patient.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/data/db/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/data/db/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/main/java/com/footforward/microservicepersonaldata/services/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/main/java/com/footforward/microservicepersonaldata/services/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/main/resources/application-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/MicroservicePersonaldataApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/MicroservicePersonaldataApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/integration/PatientServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/integration/PatientServiceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/integration/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-personaldata/src/test/java/com/footforward/microservicepersonaldata/integration/config/TestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-risk/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/INoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/INoteProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/IPatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/src/main/java/com/footforward/microservicerisk/proxy/IPatientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-risk/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-risk/src/test/java/com/footforward/microservicerisk/integration/RiskServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-risk/src/test/java/com/footforward/microservicerisk/integration/RiskServiceIT.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +90,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservice-personaldata/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.21444444" />
     <property name="project.structure.side.proportion" value="0.20709223" />
@@ -67,11 +98,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit" />
       <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata\src\main\resources" />
       <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata" />
       <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-risk" />
       <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-note" />
-      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-module" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata\src\main\resources" />
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata\src\test\java\com\footforward\microservicepersonaldata\integration\config\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -79,7 +114,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.MicroservicePersonaldataApplication">
+  <component name="RunManager" selected="JUnit.PatientServiceIT">
     <configuration name="MicroservicePersonaldataApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.footforward.microservicepersonaldata.MicroservicePersonaldataApplication" />
       <module name="microservice-personaldata" />

@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
- * Declare the microservice-patient endpoint
+ * Declare the microservice-personaldata endpoint
  */
 @Validated
 @FeignClient(name = "microservice-personaldata", url = "microservice-personaldata:9001")

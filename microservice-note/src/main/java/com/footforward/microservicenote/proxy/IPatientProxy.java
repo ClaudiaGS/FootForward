@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Declare the microservice-patient endpoint
+ * Declare the microservice-personaldata endpoint
  */
 @FeignClient(name = "microservice-personaldata", url = "microservice-personaldata:9001")
 public interface IPatientProxy {
