@@ -1,0 +1,48 @@
+version: '3.3'
+
+services:
+  mongoDB:
+    image: mongo:latest
+    container_name: mongoDB
+    volumes:
+      - ./data/mongodb:/data/db
+#      - F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-note:/data/mongodb
+    ports:
+      - 27017-27017
+    networks:
+      - microservice-personaldata_footforward-network
+    restart: always
+    command: ["--bind_ip","0.0.0.0"]
+
+  microservice-note:
+    image: microservice-note:latest
+    container_name: microservice-note
+    ports:
+      - 9002:9002
+    networks:
+      - microservice-personaldata_footforward-network
+    depends_on:
+      - mongoDB
+    external_links:
+      - microservice-personaldata
+#      - microservice-personaldata
+    environment:
+      SPRING_DATA_MONGODB_HOST: mongoDB
+      SPRING_DATA_MONGODB_PORT: 27017
+      SPRING_DATA_MONGODB_DBNAME: noteDB
+    command: ["./wait-for-it.sh", "microservice-personaldata:9001"]
+    restart: always
+
+#  microservice-personaldata2:
+#    image: microservice-personaldata:latest
+#    container_name: microservice-personaldata2
+#    ports:
+#      - 9011:9001
+#    networks:
+#      - footforward-network
+#    restart: always
+
+networks:
+  microservice-personaldata_footforward-network:
+    driver: bridge
+    external: true

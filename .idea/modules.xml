@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/FootForwardGit.iml" filepath="$PROJECT_DIR$/.idea/FootForwardGit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-module/microservice-module.iml" filepath="$PROJECT_DIR$/microservice-module/microservice-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-note/microservice-note.iml" filepath="$PROJECT_DIR$/microservice-note/microservice-note.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-personaldata/microservice-personaldata.iml" filepath="$PROJECT_DIR$/microservice-personaldata/microservice-personaldata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-risk/microservice-risk.iml" filepath="$PROJECT_DIR$/microservice-risk/microservice-risk.iml" />
+    </modules>
+  </component>
+</project>

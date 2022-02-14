@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed8c16d5-97af-4b45-b967-9e5de2422807" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-4--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-4--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/diagnostic.data/metrics.interim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/index-5--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/index-5--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/index-6--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/index-6--6032026690861449835.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/sizeStorer.wt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="autoDetectCompiler" value="false" />
+        <option name="jdkForImporter" value="#USE_PROJECT_JDK" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="24mrc8Q5wZaxoUajNQk6Uv2iUvP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.21444444" />
+    <property name="project.structure.side.proportion" value="0.20709223" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit" />
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata\src\main\resources" />
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata" />
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-risk" />
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-note" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata\src\main\resources" />
+      <recent name="F:\OPENCLASSROOMS\PROJET 9\FootForwardGit\microservice-personaldata\src\test\java\com\footforward\microservicepersonaldata\integration\config\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PatientServiceIT">
+    <configuration name="MicroservicePersonaldataApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicepersonaldata.MicroservicePersonaldataApplication" />
+      <module name="microservice-personaldata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footforward.microservicepersonaldata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-personaldata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footforward.microservicepersonaldata.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicepersonaldata.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicepersonaldata.integration.PatientServiceIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RiskServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-risk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footforward.microservicerisk.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicerisk.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicerisk.integration.RiskServiceIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RiskServiceIT.countTriggersIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-risk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footforward.microservicerisk.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicerisk.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicerisk.integration.RiskServiceIT" />
+      <option name="METHOD_NAME" value="countTriggersIT" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RiskServiceIT.diabetesAssessementCase8Greater30F" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-risk" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footforward.microservicerisk.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.footforward.microservicerisk.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.footforward.microservicerisk.integration.RiskServiceIT" />
+      <option name="METHOD_NAME" value="diabetesAssessementCase8Greater30F" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PatientServiceIT" />
+        <item itemvalue="Application.MicroservicePersonaldataApplication" />
+        <item itemvalue="JUnit.RiskServiceIT" />
+        <item itemvalue="JUnit.RiskServiceIT.countTriggersIT" />
+        <item itemvalue="JUnit.RiskServiceIT.diabetesAssessementCase8Greater30F" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed8c16d5-97af-4b45-b967-9e5de2422807" name="Default Changelist" comment="" />
+      <created>1644246683536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644246683536</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

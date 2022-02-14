@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>home</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" th:href="@{/css/Header-Blue.css}">
+    <link rel="stylesheet" href="@{/css/styles.css}">
+</head>
+
+<body style="background-color: rgb(201,212,218);">
+<div style="height: 50px;">
+    <div class="header-blue" style="height: 50px;">
+        <h1 style="color: rgb(230,234,223);">FootForward</h1>
+    </div>
+</div>
+<h1 style="margin-top: 80px;font-size: 20px;width: 80%;margin-left: 10%;">Modify patient data:</h1>
+<div class="table-responsive" style="width: 80%;margin-left: 10%;background-color: #115382;">
+    <form action="#" th:action="@{/patient/update/{id}(id=${id})}" th:object="${patient}" method="post" class="form-horizontal"
+          style="width: 100%">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Sex</th>
+                <th>Date of birth</th>
+                <th>Address</th>
+                <th>Phone</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <input type="text" th:field="*{firstName}" id="firstName" placeholder="firstName">
+                    <p class="text-danger" th:if="${#fields.hasErrors('firstName')}"
+                       th:errors="*{firstName}"></p>
+                </td>
+                <td>
+                    <input type="text" th:field="*{lastName}" id="lastName" placeholder="lastName">
+                    <p class="text-danger" th:if="${#fields.hasErrors('lastName')}"
+                       th:errors="*{lastName}"></p>
+                </td>
+                <td>
+                    <input type="text" th:field="*{sex}" id="sex" placeholder="sex">
+                    <p class="text-danger" th:if="${#fields.hasErrors('sex')}" th:errors="*{sex}"></p>
+                </td>
+                <td>
+                    <input th:field="*{dateOfBirth}" id="dateOfBirth" placeholder="Format yyyy-mm-dd">
+                    <p class="text-danger" th:if="${#fields.hasErrors('dateOfBirth')}"
+                       th:errors="*{dateOfBirth}"></p>
+                </td>
+                <td>
+                    <input type="text" th:field="*{address}" id="address" placeholder="address">
+                    <p class="text-danger" th:if="${#fields.hasErrors('address')}"
+                       th:errors="*{address}"></p>
+                </td>
+                <td>
+                    <input type="text" th:field="*{phone}" id="phone" placeholder="phone">
+                    <p class="text-danger" th:if="${#fields.hasErrors('phone')}"
+                       th:errors="*{phone}"></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-primary" type="submit"><span style="color:white"><span style="color:white">Save patient data</span></span></button>
+    </form>
+    <button class="btn btn-primary" type="button"><a th:href="@{/}"><span style="color:white"> Back to patient list</span></a></button>
+    <button class="btn btn-primary" type="button"><a th:href="@{/patient/{id}(id=${patient.id})}"><span style="color:white"> Back to patient info</span></a></button>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

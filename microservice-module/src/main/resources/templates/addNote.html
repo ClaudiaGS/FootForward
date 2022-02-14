@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>home</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" th:href="@{/css/Header-Blue.css}">
+    <link rel="stylesheet" href="@{/css/styles.css}">
+</head>
+
+<body style="background-color: rgb(201,212,218);">
+<div style="height: 50px;">
+    <div class="header-blue" style="height: 50px;">
+        <h1 style="color: rgb(230,234,223);">FootForward</h1>
+    </div>
+</div>
+<h1 style="margin-top: 80px;font-size: 20px;width: 80%;margin-left: 10%;">Add note for patient:<span th:text="${patient.id}">Id</span>.<span th:text="${patient.firstName}">First Name</span> <span th:text="${patient.lastName}">Last Name</span></h1>
+
+
+<div class="table-responsive" style="width: 80%;margin-left: 10%;background-color: #115382;">
+    <form action="#" th:action="@{/note/validate/{id}(id=${patient.id})}" th:object="${note}" method="post" class="form-horizontal"
+          style="width: 100%">
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Practitioner's notes/recommendations</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <input type="text" th:field="*{note}" id="note" placeholder="Type here">
+                    <p class="text-danger" th:if="${#fields.hasErrors('note')}"
+                       th:errors="*{note}"></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-primary" type="submit"><span style="color:white">Save note</span></button>
+    </form>
+    <button class="btn btn-primary" type="button"><a th:href="@{/patient/{id}(id=${patient.id})}"><span
+            style="color:white"> Back to patient info</span></a></button>
+    <button class="btn btn-primary" type="button"><a th:href="@{/}"><span
+            style="color:white"> Back to patient list</span></a></button>
+
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
