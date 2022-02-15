@@ -1,6 +1,7 @@
 HELP.md
 target/
-secrets/
+secrets
+secrets/*
 data/
 patientDB/
 !.mvn/wrapper/maven-wrapper.jar
@@ -36,3 +37,4 @@ build/
 .vscode/
 /data/
 
+/secrets/
