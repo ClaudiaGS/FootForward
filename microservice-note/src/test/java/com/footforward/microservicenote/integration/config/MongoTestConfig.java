@@ -12,27 +12,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 import java.util.Collection;
 import java.util.Collections;
 
-//@TestConfiguration
-//@EnableMongoRepositories(basePackages = "com.footforward.microservicenote.repositories")
-//public class MongoTestConfig {
-//
-//    @Bean
-//    @Primary
-//    public MongoClient mongo() {
-//        ConnectionString connectionString = new ConnectionString("mongodb://localhost:27017/noteTestDB");
-//        MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
-//                .applyConnectionString(connectionString)
-//                .build();
-//
-//        return MongoClients.create(mongoClientSettings);
-//    }
-//
-//    @Bean
-//    @Primary
-//    public MongoTemplate mongoTemplate() throws Exception {
-//        return new MongoTemplate(mongo(), "noteTestDB");
-//    }
-//}
 @TestConfiguration
 @EnableMongoRepositories(basePackages = "com.footforward.microservicenote.repositories")
 @Primary

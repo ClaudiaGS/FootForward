@@ -8,11 +8,10 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.core.env.Environment;
 
 import javax.sql.DataSource;
-
 @TestConfiguration
 @EnableEncryptableProperties
 public class TestConfig {
-
+    
     @Bean
     @Primary
     public DataSource getDataSource(Environment env)
@@ -24,5 +23,5 @@ public class TestConfig {
         dataSourceBuilder.password(env.getProperty("spring.datasource.password"));
         return dataSourceBuilder.build();
     }
-
+    
 }
