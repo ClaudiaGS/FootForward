@@ -31,7 +31,7 @@ services:
     restart: always
 secrets:
   db_password:
-    file: ./secrets/db_password.txt
+    file: ../../secrets/db_password.txt
 
 networks:
   footforward-network:
