@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed8c16d5-97af-4b45-b967-9e5de2422807" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.turtle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-4--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/collection-4--6032026690861449835.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/diagnostic.data/metrics.interim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/index-5--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/index-5--6032026690861449835.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/index-6--6032026690861449835.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/index-6--6032026690861449835.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-note/data/mongodb/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-note/data/mongodb/sizeStorer.wt" afterDir="false" />
-    </list>
+    <list default="true" id="ed8c16d5-97af-4b45-b967-9e5de2422807" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
